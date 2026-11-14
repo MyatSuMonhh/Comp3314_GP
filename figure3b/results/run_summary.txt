@@ -1,0 +1,13 @@
+Figure 3B conceptual reproduction
+Tree uses active features 0, 1, 2; features 3-99 are unused dummies.
+All features are independently Bernoulli(0.5); explained active input is (1,1,1).
+Baseline: 0.62500000
+Prediction: 1.70000000
+Active-feature SHAP values: 0.39583333, 0.30833333, 0.37083333
+Target feature: 0; exact SHAP reference: 0.39583333
+Attribution sum: 1.07500000; prediction minus baseline: 1.07500000
+Repetitions: 200; budgets: [200, 400, 600, 800, 1000]
+
+Kernel SHAP (sparse WLS) at budget 1000: median=0.395087, p10=0.385189, p90=0.404140, RMSE=0.007185
+Shapley sampling at budget 1000: median=0.395900, p10=0.391300, p90=0.400900, RMSE=0.003658
+LIME-style surrogate at budget 1000: median=0.393794, p10=0.390602, p90=0.397361, RMSE=0.003294

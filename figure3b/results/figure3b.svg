@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="600" viewBox="0 0 980 600">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,sans-serif;fill:#243247}.small{font-size:13px}.label{font-size:16px}.title{font-size:22px;font-weight:bold}</style>
+<text x="92" y="28" class="title">Figure 3B conceptual reproduction: sparse 100-input tree</text>
+<line x1="92" y1="518.00" x2="944" y2="518.00" stroke="#e4e8ee"/>
+<text x="80" y="522.00" text-anchor="end" class="small">-0.20</text>
+<line x1="92" y1="424.00" x2="944" y2="424.00" stroke="#e4e8ee"/>
+<text x="80" y="428.00" text-anchor="end" class="small">0.04</text>
+<line x1="92" y1="330.00" x2="944" y2="330.00" stroke="#e4e8ee"/>
+<text x="80" y="334.00" text-anchor="end" class="small">0.28</text>
+<line x1="92" y1="236.00" x2="944" y2="236.00" stroke="#e4e8ee"/>
+<text x="80" y="240.00" text-anchor="end" class="small">0.52</text>
+<line x1="92" y1="142.00" x2="944" y2="142.00" stroke="#e4e8ee"/>
+<text x="80" y="146.00" text-anchor="end" class="small">0.76</text>
+<line x1="92" y1="48.00" x2="944" y2="48.00" stroke="#e4e8ee"/>
+<text x="80" y="52.00" text-anchor="end" class="small">1.00</text>
+<line x1="92" y1="284.63" x2="944" y2="284.63" stroke="#475569" stroke-dasharray="7 5" stroke-width="2"/>
+<text x="940" y="276.63" text-anchor="end" class="small">Exact SHAP = 0.396</text>
+<polygon points="92.00,277.91 305.00,279.20 518.00,280.28 731.00,280.27 944.00,281.38 944.00,288.80 731.00,289.07 518.00,289.67 305.00,291.02 92.00,296.64" fill="#167D79" opacity="0.14"/>
+<polyline points="92.00,286.00 305.00,284.78 518.00,284.77 731.00,284.61 944.00,284.92" fill="none" stroke="#167D79" stroke-width="3"/>
+<circle cx="92.00" cy="286.00" r="4" fill="#167D79"/>
+<circle cx="305.00" cy="284.78" r="4" fill="#167D79"/>
+<circle cx="518.00" cy="284.77" r="4" fill="#167D79"/>
+<circle cx="731.00" cy="284.61" r="4" fill="#167D79"/>
+<circle cx="944.00" cy="284.92" r="4" fill="#167D79"/>
+<polygon points="92.00,280.75 305.00,281.58 518.00,282.31 731.00,282.90 944.00,282.65 944.00,286.41 731.00,286.44 518.00,287.13 305.00,287.50 92.00,289.17" fill="#D9476D" opacity="0.14"/>
+<polyline points="92.00,285.15 305.00,284.32 518.00,284.53 731.00,284.66 944.00,284.61" fill="none" stroke="#D9476D" stroke-width="3"/>
+<circle cx="92.00" cy="285.15" r="4" fill="#D9476D"/>
+<circle cx="305.00" cy="284.32" r="4" fill="#D9476D"/>
+<circle cx="518.00" cy="284.53" r="4" fill="#D9476D"/>
+<circle cx="731.00" cy="284.66" r="4" fill="#D9476D"/>
+<circle cx="944.00" cy="284.61" r="4" fill="#D9476D"/>
+<polygon points="92.00,282.50 305.00,283.32 518.00,283.95 731.00,284.05 944.00,284.03 944.00,286.68 731.00,286.76 518.00,286.99 305.00,287.61 92.00,288.48" fill="#3579B9" opacity="0.14"/>
+<polyline points="92.00,285.32 305.00,285.56 518.00,285.43 731.00,285.48 944.00,285.43" fill="none" stroke="#3579B9" stroke-width="3"/>
+<circle cx="92.00" cy="285.32" r="4" fill="#3579B9"/>
+<circle cx="305.00" cy="285.56" r="4" fill="#3579B9"/>
+<circle cx="518.00" cy="285.43" r="4" fill="#3579B9"/>
+<circle cx="731.00" cy="285.48" r="4" fill="#3579B9"/>
+<circle cx="944.00" cy="285.43" r="4" fill="#3579B9"/>
+<line x1="92.00" y1="518" x2="92.00" y2="523" stroke="#526176"/>
+<text x="92.00" y="544" text-anchor="middle" class="small">200</text>
+<line x1="305.00" y1="518" x2="305.00" y2="523" stroke="#526176"/>
+<text x="305.00" y="544" text-anchor="middle" class="small">400</text>
+<line x1="518.00" y1="518" x2="518.00" y2="523" stroke="#526176"/>
+<text x="518.00" y="544" text-anchor="middle" class="small">600</text>
+<line x1="731.00" y1="518" x2="731.00" y2="523" stroke="#526176"/>
+<text x="731.00" y="544" text-anchor="middle" class="small">800</text>
+<line x1="944.00" y1="518" x2="944.00" y2="523" stroke="#526176"/>
+<text x="944.00" y="544" text-anchor="middle" class="small">1000</text>
+<line x1="92" y1="48" x2="92" y2="518" stroke="#526176"/>
+<line x1="92" y1="518" x2="944" y2="518" stroke="#526176"/>
+<text x="518.0" y="576" text-anchor="middle" class="label">Model evaluations (coalition-value queries)</text>
+<text x="22" y="283.0" transform="rotate(-90 22 283.0)" text-anchor="middle" class="label">Estimated SHAP value for feature 0</text>
+<line x1="92" y1="570" x2="116" y2="570" stroke="#167D79" stroke-width="3"/>
+<text x="122" y="575" class="small">Kernel SHAP (sparse WLS)</text>
+<line x1="342" y1="570" x2="366" y2="570" stroke="#D9476D" stroke-width="3"/>
+<text x="372" y="575" class="small">Shapley sampling</text>
+<line x1="592" y1="570" x2="616" y2="570" stroke="#3579B9" stroke-width="3"/>
+<text x="622" y="575" class="small">LIME-style surrogate</text>
+<text x="92" y="595" class="small">Shaded bands: 10th–90th percentile across repetitions. Synthetic tree, not original paper data.</text>
+</svg>

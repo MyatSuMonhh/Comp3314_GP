@@ -1,0 +1,101 @@
+{
+  "paper": "https://proceedings.neurips.cc/paper_files/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf",
+  "scope": "partial reproduction, newly trained CNN, Kernel SHAP and adapted image LIME",
+  "profile": "paper-budget",
+  "source": 8,
+  "target": 3,
+  "samples_per_method_per_image": 50000,
+  "seed": 2026,
+  "image_ids": [
+    8530,
+    6493,
+    7016,
+    8294,
+    7805,
+    374,
+    3072,
+    8209,
+    3781,
+    876,
+    4707,
+    1850,
+    7181,
+    6359,
+    3633,
+    3708,
+    1855,
+    8963,
+    1093,
+    6317
+  ],
+  "image_selection": "random true source class correctly classified as source",
+  "mask_fraction_of_entire_image": 0.2,
+  "mask_pixel_cap": 157,
+  "mask_rule": "descending phi_source-phi_target, strictly positive only; stable pixel-index tie break",
+  "background": "one all-zero image",
+  "explanation_output": "two columns of original ten-way probabilities, unrenormalized",
+  "lime": {
+    "kernel_width": 0.25,
+    "ridge_alpha": 1.0,
+    "feature_selection": "none",
+    "features": "one binary feature per nonzero pixel",
+    "distance": "cosine to all-present mask"
+  },
+  "metric": "delta log(p_target/p_source), computed exactly using pre-softmax logits",
+  "random_repeats": 30,
+  "random_rule": "for each method/image, same actual removed pixel count; choose uniformly among nonzero pixels",
+  "checkpoint_sha256": "4cfa2ed02b5396ae294611756f7d576c86bb3de5703eb4253f51f5d4a6364b1a",
+  "training": {
+    "architecture": "conv16-pool-conv32-pool-dense128-dense10-v1",
+    "seed": 2026,
+    "epochs": 3,
+    "learning_rate": 0.001,
+    "batch_size": 256,
+    "device": "cpu",
+    "threads": 4,
+    "fit_examples": 55000,
+    "validation_examples": 5000,
+    "selection": "highest validation accuracy, first epoch on ties",
+    "test_accuracy": 0.9832,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.4276626425602219,
+        "validation_accuracy": 0.959
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.10664826144413514,
+        "validation_accuracy": 0.975
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.07020663291215896,
+        "validation_accuracy": 0.9804
+      }
+    ],
+    "elapsed_seconds": 21.26093829199999,
+    "torch_version": "2.12.1"
+  },
+  "device": "cpu",
+  "threads": 4,
+  "versions": {
+    "torch": "2.12.1",
+    "torchvision": "0.27.1",
+    "numpy": "2.3.3",
+    "scipy": "1.18.0",
+    "shap": "0.50.0",
+    "lime": "0.2.0.1",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.0"
+  },
+  "differences_from_paper": [
+    "new CNN and weights",
+    "new fixed sample of correctly classified 8s",
+    "Original/New DeepLIFT omitted",
+    "LIME adaptation uses official LimeBase with specified modern settings",
+    "exact top-k tie break instead of author's strict threshold",
+    "random matched controls added",
+    "sampling budget may differ, see samples_per_method_per_image"
+  ]
+}

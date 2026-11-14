@@ -1,0 +1,42 @@
+[
+  {
+    "method": "Kernel SHAP",
+    "n_images": 20,
+    "mean_delta_log_odds": 15.320460653305053,
+    "median_delta_log_odds": 15.699670791625977,
+    "target_beats_source_rate": 1.0,
+    "top1_target_rate": 0.7,
+    "mean_removed_pixels": 107.4,
+    "mean_explanation_seconds": 2.107088097750193
+  },
+  {
+    "method": "Random matched to Kernel SHAP",
+    "n_images": 20,
+    "mean_delta_log_odds": 6.481013288497924,
+    "median_delta_log_odds": 6.208588401476542,
+    "target_beats_source_rate": 0.12000000000000002,
+    "top1_target_rate": 0.07,
+    "mean_removed_pixels": 107.4,
+    "mean_explanation_seconds": 0.0
+  },
+  {
+    "method": "LIME",
+    "n_images": 20,
+    "mean_delta_log_odds": 14.442025279998779,
+    "median_delta_log_odds": 14.887256145477295,
+    "target_beats_source_rate": 1.0,
+    "top1_target_rate": 0.35,
+    "mean_removed_pixels": 110.3,
+    "mean_explanation_seconds": 1.5422251874500943
+  },
+  {
+    "method": "Random matched to LIME",
+    "n_images": 20,
+    "mean_delta_log_odds": 6.494864096641541,
+    "median_delta_log_odds": 6.577020311355591,
+    "target_beats_source_rate": 0.10666666666666666,
+    "top1_target_rate": 0.06166666666666667,
+    "mean_removed_pixels": 110.3,
+    "mean_explanation_seconds": 0.0
+  }
+]
